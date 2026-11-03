@@ -1,4 +1,4 @@
-header h1 {
+header h1{
   position: absolute;
   top: 0;
   left: 0;
@@ -12,3 +12,40 @@ header h1 {
   z-index: 1000;
 }
 
+.title{
+  color: black;
+}
+
+.sb-mem-list{
+  display: flex;
+  justify-items: center;
+}
+
+.sb-mem-names{
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sb-mem-names li{
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+
+  text-align: center;
+}
+
+.sb-mem-names li img{
+  width: 75px;
+  height: auto;
+}
+
+.sb-mem-names p{
+  height: 35px;
+}
+
+.sb-mem-names hr{
+  width: 50px;
+}
