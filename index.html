@@ -22,12 +22,10 @@
         </section>
         <section id="sb-members">
           <div class="title">
-            <!-- INSERT MEMBERS TITLE HERE -->
             <h1>The Brotherhood Behind the Music</h1>
           </div>
           <hr>
           <div class="info">
-            <!-- INSERT MEMBERS BRIEF INFO HERE -->
             <p>SB19 consists of five multi-talented members, each bringing unique strengths to the group:</p>
             <section class="sb-mem-list">
               <!-- INSERT MEMBERS LIST HERE -->
@@ -60,7 +58,6 @@
                </ul>
             </section>
             <div id="sb-mem-info"></div>
-            <!-- INSERT MEMBERS SUMMARIZED INFO HERE -->
             <p>Together, they embody discipline, artistry, and brotherhood, redefining what it means to be a Filipino idol group.</p>
           </div>
         </section>
@@ -70,23 +67,31 @@
           </div>
           <hr>
           <div class="title">
-            <!-- INSERT ALBUMS BRIEF INFO HERE -->
             <p>SB19’s discography showcases their evolution from local pioneers to global icons:</p>
             <section class="sb-disco-list">
-              <!-- INSERT ALBUMS LIST HERE -->
-               <ol>
-                <li><p>Get in the Zone! (2020)</p><hr></li>
-                <li><p>Pagsibol (2021)</p><hr></li>
-                <li><p>Pagtatag! (2023)</p><hr></li>
-                <li><p>Simula at Wakas (2025)</p><hr></li>
-                <li><p>Wakas at Simula (2026)</p><hr></li>
-               </ol>
-            </section>
-            <div id="sb-disco-info"></div>
-            <!-- INSERT ALBUMS SUMMARIZED INFO HERE -->
-            <p>Their albums reflect a journey of resilience, innovation, and cultural pride.</p>
-          </div>
-        </section>
+              <ol class="sb-disco" id="sb-disco">
+                <li onclick="sbDisco('GetInTheZone')">
+                  <p>Get in the Zone! (2020)</p>
+                  <hr>
+                  <img src="https://images.genius.com/f1ed99cbe1ded07acbfb4df07ccc7d48.1000x1000x1.jpg">
+                </li>
+                <li onclick="sbDisco('Pagsibol')">
+                  <p>Pagsibol (2021)</p>
+                  <hr>
+                  <img src="https://i.scdn.co/image/ab67616d0000b2732df704df7b4ede5f71b053cf">
+                </li>
+                <li onclick="sbDisco('Pagtatag')">
+                  <p>Pagtatag! (2023)</p>
+                  <hr>
+                  <img src="https://images.genius.com/e0b7e22237b5e60556bc5f37e4e2e3af.1000x1000x1.jpg">
+                </li>
+                <li onclick="sbDisco('SimulaAtWakas')">
+                  <p>Simula at Wakas (2025)</p>
+                  <hr>
+                  <img src="https://tse3.mm.bing.net/th/id/OIP.vVL9V5kkOmMp3n3eYmxupQHaHa?pid=Api&P=0&h=220">
+                </li>
+            </ol>
+          </section>
       </div>
     </main>
   </body>

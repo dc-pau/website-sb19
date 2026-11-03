@@ -1,5 +1,5 @@
 header h1{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -12,16 +12,29 @@ header h1{
   z-index: 1000;
 }
 
+main{
+  display: flex;
+  align-items: stretch;
+}
+
+.main-info{
+  margin-top: 70px;
+  margin-left: 20px;
+  height: auto;
+}
+
+
+
 .title{
   color: black;
 }
 
-.sb-mem-list{
+.sb-mem-list, .sb-disco-list{
   display: flex;
   justify-items: center;
 }
 
-.sb-mem-names{
+.sb-mem-names, .sb-disco{
   list-style-type: none;
 
   display: flex;
@@ -29,7 +42,7 @@ header h1{
   gap: 10px;
 }
 
-.sb-mem-names li{
+.sb-mem-names li, .sb-disco li{
   width: 150px;
   height: 200px;
   border: 1px solid black;
@@ -37,15 +50,16 @@ header h1{
   text-align: center;
 }
 
-.sb-mem-names li img{
+.sb-mem-names li img, .sb-disco li img{
   width: 75px;
   height: auto;
 }
 
-.sb-mem-names p{
+.sb-mem-names p, .sb-disco p{
   height: 35px;
 }
 
-.sb-mem-names hr{
+.sb-mem-names hr, .sb-disco hr{
   width: 50px;
 }
+
