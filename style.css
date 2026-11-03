@@ -63,3 +63,15 @@ main{
   width: 50px;
 }
 
+.info-card{
+  margin-left: 100px;
+  margin-bottom: 20px;
+
+  border-left: 1px solid lightgray;
+  padding-left: 10px;
+}
+
+.info-card a{
+  text-decoration: none;
+  color: black;
+}
