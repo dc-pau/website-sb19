@@ -17,13 +17,35 @@ main{
   align-items: stretch;
 }
 
-.main-info{
-  margin-top: 70px;
-  margin-left: 20px;
+.side-menu{
   height: auto;
+  width: 250px;
+  position: fixed;
+
+  top: 70px;
 }
 
+.side-menu h3{
+  margin-left: 10px;
+}
 
+.menu-title{
+  list-style-type: none;
+}
+
+.menu-title a{
+  display: block;
+
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.main-info{
+  margin-top: 70px;
+  margin-left: 260px;
+  height: auto;
+}
 
 .title{
   color: black;
