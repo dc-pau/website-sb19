@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 header h1{
   position: fixed;
   top: 0;
@@ -39,12 +43,27 @@ main{
   padding: 10px;
   text-decoration: none;
   color: black;
+
+  transition: all 0.5s ease;
+}
+
+.menu-title a:hover, .menu-title a.menu-selected{
+  background-color: black;
+  opacity: 1;
+  border-radius: 5px;
+
+  color: white;
+  transform: translateY(-5px);
 }
 
 .main-info{
   margin-top: 70px;
   margin-left: 260px;
   height: auto;
+}
+
+.main-info section{
+  scroll-margin-top: 70px;
 }
 
 .title{
@@ -70,6 +89,32 @@ main{
   border: 1px solid black;
 
   text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.sb-mem-names:has(li:hover) li:not(:hover), .sb-disco:has(li:hover) li:not(:hover){
+  opacity: 0.3;
+}
+
+.sb-mem-names li:hover, .sb-mem-names li.mem-selected{
+  transform: scale(1.1);
+  z-index: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 1;
+
+  background-color: black;
+  color: white;
+}
+
+.sb-disco li:hover, .sb-disco li.alb-selected{
+  transform: scale(1.1);
+  z-index: 1;
+  opacity: 1;
+
+  background-color: black;
+  color: white;
 }
 
 .sb-mem-names li img, .sb-disco li img{
@@ -96,4 +141,9 @@ main{
 .info-card a{
   text-decoration: none;
   color: black;
+}
+
+.info-card a:hover{
+  text-decoration: underline;
+  color: green;
 }
